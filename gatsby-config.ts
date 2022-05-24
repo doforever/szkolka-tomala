@@ -5,12 +5,10 @@ const config: GatsbyConfig = {
     title: `szkolka-tomala`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": ""
-    }
-  }, "gatsby-plugin-image", {
+  plugins: [
+    "gatsby-plugin-sass", 
+    "gatsby-plugin-image", 
+    'gatsby-plugin-postcss', {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
