@@ -1,5 +1,6 @@
 import * as React from "react"
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/Layout";
+import Banner from "../components/Banner";
 
 // markup
 const IndexPage = () => {
@@ -7,7 +8,7 @@ const IndexPage = () => {
     <>
       <title>Szkółka Tomala</title>
       <Layout>
-        <h1>Gospodarstwo Szkółkarskie Jolanta i Kazimierz Tomala</h1>
+        <Banner/>
       </Layout>
     </>
       

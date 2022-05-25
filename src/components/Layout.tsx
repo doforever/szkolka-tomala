@@ -1,5 +1,5 @@
 import * as React from "react";
-import Header from '../Header/Header';
+import Header from './Header';
 
 type Props = {
   children?: React.ReactNode;
@@ -10,7 +10,7 @@ const Layout = ({children}: Props) => {
   return (
    <div>
      <Header/>
-      <main className="lg:container lg:mx-auto">{children}</main>
+      <main>{children}</main>
    </div>
   )
 }
