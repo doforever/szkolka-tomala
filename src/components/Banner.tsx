@@ -4,8 +4,8 @@ import { StaticImage } from "gatsby-plugin-image";
 // markup
 const Banner = () => {
   return (
-    <section className="">
-      <StaticImage src="../images/20210812_0095.jpg" alt="Szkółka Tomala logo"/>
+    <section>
+      <StaticImage className="h-screen" src="../images/20210812_0095.jpg" alt="Szkółka Tomala logo" objectFit="cover"/>
     </section>
   )
 }
