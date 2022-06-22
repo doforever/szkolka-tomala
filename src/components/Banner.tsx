@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 //data
-const headline = 'Tu będzie jakiś tekst nagłówka',
-  copy = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis maximus lorem, id malesuada massa gravida et. Suspendisse congue, nisl vitae bibendum molestie, leo ligula condimentum magna, vitae blandit libero dui nec felis. Pellentesque nec dictum sapien, vel mattis quam. Fusce in condimentum ligula.',
-  src = "../images/20210812_0095.jpg",
-  alt = "Szkółka Tomala logo";
+const headline = 'Rodzinna szkółka drzew ozdobnych w Buchałowicach na Lubelszczyźnie',
+  copy = 'Zapraszamy do zapoznania się z naszą ofertą',
+  src = '../images/20210812_0095.jpg',
+  alt = 'Szkółka Tomala logo',
+  cta = 'Zobacz ofertę';
 
 // markup
 const Banner = () => {
@@ -19,10 +20,11 @@ const Banner = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <StaticImage className="h-[50vh] lg:h-[60vh]" src={src} alt={alt} objectFit="cover" />
-      <div className={"prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-8 bg-white rounded transition-all duration-1000 lg:mt-24" + (entered ? " translate-y-0" : " lg:translate-y-[150%]")}>
+      <StaticImage className="h-[35vh] lg:h-[60vh]" src={src} alt={alt} objectFit="cover" />
+      <div className={"prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-8 bg-white transition-all ease-out duration-1000 lg:mt-24" + (entered ? " translate-y-0" : " lg:translate-y-[150%]")}>
         <h2>{headline}</h2>
         <p>{copy}</p>
+        <a href="oferta-jesien-2016.pdf" className="bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline">{cta}</a>
       </div>
     </section>
   )
