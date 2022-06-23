@@ -7,7 +7,7 @@ const address = 'Gospodarstwo Szkółkarskie Jolanta i Kazimierz Tomala \n Bucha
 
 // markup
 const Contact = () => (
-  <section className="flex flex-col md:flex-row gap-4 lg:gap-8 py-4 px-[5vw] justify-between">
+  <section className="flex flex-col md:flex-row gap-4 lg:gap-8 p-[5vw] md:py-4 justify-between">
     <div className="prose flex-1 max-w-md">
       <h3>Kontakt</h3>
       <address className="not-italic">
