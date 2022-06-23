@@ -39,7 +39,7 @@ const Gallery = () => {
           key={image.node.base}
           image={image.node.childImageSharp.gatsbyImageData}
           alt={image.node.base.split(".")[0]}
-          className="w-[80vw]	md:w-auto"
+          className="w-[80vw]	md:w-auto hover:scale-[1.02] transition duration-500 ease-out overflow-hidden"
         />
       ))}
     </section>
