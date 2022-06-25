@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-postcss', {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/tomala_logo.png"
     }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',

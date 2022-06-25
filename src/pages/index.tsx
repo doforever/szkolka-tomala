@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Map from "../components/Map";
 import Contact from "../components/Contact";
 import Gallery from "../components/Gallery";
+import Offer from "../components/Offer";
 
 // markup
 const IndexPage = () => (
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <title>Szkółka Tomala</title>
     <Layout>
       <Banner />
+      <Offer />
       <Gallery />
       <Contact />
       <Map />
