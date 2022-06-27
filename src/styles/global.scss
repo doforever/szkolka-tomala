@@ -10,3 +10,9 @@
     font-family: 'Poppins', sans-serif;
   }
 }
+
+.offer {
+  &__columns {
+    grid-template-columns: repeat(auto-fit, 250px);
+  }
+}
