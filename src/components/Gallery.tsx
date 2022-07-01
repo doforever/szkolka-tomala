@@ -2,13 +2,11 @@ import React, {useState} from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Lightbox from "./Lightbox";
-import Slider from "react-slick";
 
 //data
 
 // markup
 const Gallery = () => {
-  const [showLightbox, setShowLightbox] = useState(false);
   const [selectedImage, setSelectedImage] = useState<number|null>(null);
 
   // const handleOpen =(i: number) => {
@@ -63,7 +61,7 @@ const Gallery = () => {
           <a 
             key={i}
             tabIndex={0}
-            onClick={() => { setSelectedImage(i); console.log('click ', i) }}
+            onClick={() => {setSelectedImage(i)}}
             onKeyDown={(e) => { if (e.key === "Enter") {setSelectedImage(i)}}}
             className="md:hover:scale-[1.02] md:focus:scale-[1.02] transition duration-500 ease-out"
           >
@@ -75,9 +73,11 @@ const Gallery = () => {
           </a>
         ))}
      
-      {showLightbox && selectedImage !== null && (
+      { selectedImage !== null && (
         <Lightbox
-          // images={images}
+          closeLightbox = {() => setSelectedImage(null)}
+          images={images}
+          initialSlide={selectedImage}
           // handleClose={handleClose}
           // handleNextRequest={handleNextRequest}
           // handlePrevRequest={handlePrevRequest}
