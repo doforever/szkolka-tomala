@@ -9,21 +9,6 @@ import Lightbox from "./Lightbox";
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number|null>(null);
 
-  // const handleOpen =(i: number) => {
-  //   setShowLightbox(true)
-  //   setSelectedImage(i)
-  // }
-  // const handleClose = () => {
-  //   setShowLightbox(false)
-  //   setSelectedImage(null)
-  // }
-  // const handlePrevRequest = (i, length) => e => {
-  //   setSelectedImage((i - 1 + length) % length)
-  // }
-  // const handleNextRequest = (i, length) => e => {
-  //   setSelectedImage((i + 1) % length)
-  // }
-
   const allImagesQuery = graphql`
     query {
       allFile(
@@ -63,7 +48,7 @@ const Gallery = () => {
             tabIndex={0}
             onClick={() => {setSelectedImage(i)}}
             onKeyDown={(e) => { if (e.key === "Enter") {setSelectedImage(i)}}}
-            className="md:hover:scale-[1.02] md:focus:scale-[1.02] transition duration-500 ease-out"
+            className="pointer-events-none md:pointer-events-auto md:hover:scale-[1.02] md:focus:scale-[1.02] transition duration-500 ease-out"
           >
             <GatsbyImage
               image={image.node.childImageSharp.gatsbyImageData}

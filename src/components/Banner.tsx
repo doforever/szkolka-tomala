@@ -34,7 +34,7 @@ const Banner = () => {
     allFile: { edges: images },
   } = useStaticQuery(allImagesQuery);
 
-  console.log('images', images);
+  // console.log('images', images);
 
   const [entered, setEntered] = useState(false);
 
