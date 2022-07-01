@@ -38,8 +38,8 @@ const Gallery = () => {
             childImageSharp {
               gatsbyImageData (
                 placeholder: BLURRED
-                width: 600
-                height: 800
+                width: 1200
+                height: 1600
                 transformOptions: {fit: COVER}
               )
             }
