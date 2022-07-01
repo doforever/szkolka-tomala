@@ -5,6 +5,7 @@ import React from "react";
 
 // markup
 const Lightbox = () => {
+  console.log('open lightbox');
   return null;
 }
 

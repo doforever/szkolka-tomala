@@ -55,17 +55,24 @@ const Gallery = () => {
     allFile: { edges: images },
   } = useStaticQuery(allImagesQuery);
 
-  console.log('images', images);
+  // console.log('images', images);
 
   return (
     <section className="grid grid-flow-col overflow-x-auto md:grid-flow-row gap-4 px-[5vw] py-8 md:grid-cols-3 lg:grid-cols-4">
-        {images.map((image: { node: { childImageSharp: { gatsbyImageData: any; }; base: string; }; }) => (
-          <GatsbyImage
-            key={image.node.base}
-            image={image.node.childImageSharp.gatsbyImageData}
-            alt={image.node.base.split(".")[0]}
-            className="w-[80vw]	md:w-auto md:hover:scale-[1.02] transition duration-500 ease-out overflow-hidden"
-          />
+        {images.map((image: { node: { childImageSharp: { gatsbyImageData: any; }; base: string; }; }, i: number ) => (
+          <a 
+            key={i}
+            tabIndex={0}
+            onClick={() => { setSelectedImage(i); console.log('click ', i) }}
+            onKeyDown={(e) => { if (e.key === "Enter") {setSelectedImage(i)}}}
+            className="md:hover:scale-[1.02] md:focus:scale-[1.02] transition duration-500 ease-out"
+          >
+            <GatsbyImage
+              image={image.node.childImageSharp.gatsbyImageData}
+              alt={image.node.base.split(".")[0]}
+              className="w-[80vw]	md:w-auto overflow-hidden"
+            />
+          </a>
         ))}
      
       {showLightbox && selectedImage !== null && (
