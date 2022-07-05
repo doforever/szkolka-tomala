@@ -49,6 +49,14 @@
   left: -5vmax;
 }
 
+.last .slick-next, .first .slick-prev {
+  pointer-events: none;
+
+  &::before {
+    opacity: .25;
+  }   
+}
+
 .offer {
   &__columns {
     grid-template-columns: repeat(auto-fit, 250px);
