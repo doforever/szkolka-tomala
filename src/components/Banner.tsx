@@ -88,7 +88,13 @@ const Banner = () => {
       <div className={"prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-[5vw] lg:p-8 bg-white transition-all ease-out duration-1000 lg:mt-24" + (entered ? " translate-y-0" : " lg:translate-y-[150%]")}>
         <h2>{headline}</h2>
         <p>{copy}</p>
-        <a href="oferta-jesien-2016.pdf" className="bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block">{cta}</a>
+        <a 
+          target="_blank" 
+          href="oferta-jesien-2016.pdf" 
+          className="bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block"
+        >
+          {cta}
+        </a>
       </div>
     </section>
   )
