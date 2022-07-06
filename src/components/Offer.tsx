@@ -26,7 +26,7 @@ const Offer = () => {
       <h2 className="text-xl font-semibold mb-4">{headline}</h2>
       <ul className="grid gap-x-4 lg:gap-x-8 offer__columns">
         {trees.map(({ pl, lac }: {pl: string, lac: string}, index: number) => (
-          <li key={index}>{pl} <i className="pl-1 text-black/60 text-sm">{lac}</i></li>
+          <li className="hidden lg:block" key={index}>{pl} <i className="pl-1 text-black/60 text-sm">{lac}</i></li>
         ))}
       </ul>
     </section>
