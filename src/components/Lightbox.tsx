@@ -53,8 +53,8 @@ const Lightbox = ({ closeLightbox, initialSlide, children }: LightboxProps) => {
     current === 0
       ? 'first'
       : current === Children.count(children) - 1
-        ? 'last'
-        : '';
+      ? 'last'
+      : '';
 
   return (
     <div

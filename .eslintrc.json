@@ -18,13 +18,10 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
     "linebreak-style": [
       "error",
       "unix"
@@ -37,6 +34,12 @@
       "error",
       "always",
       {"omitLastInOneLineBlock": true}
+    ],
+    "prettier/prettier": ["error", { 
+      "jsxSingleQuote": true, 
+      "singleQuote": true, 
+      "arrowParens": "avoid" 
+      }
     ]
   }
 }
