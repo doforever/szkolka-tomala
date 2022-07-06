@@ -1,5 +1,5 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 // markup
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
         </a>
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

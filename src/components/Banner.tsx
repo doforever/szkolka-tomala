@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import Slider from "react-slick";
+import React, { useState, useEffect } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import Slider from 'react-slick';
 
 //data
 const headline = 'Rodzinna szkółka drzew ozdobnych w Buchałowicach na Lubelszczyźnie',
@@ -60,7 +60,7 @@ const Banner = () => {
           dots: true,
           autoplay: false,
           speed: 800,
-        }
+        },
       },
       {
         breakpoint: 639,
@@ -68,24 +68,24 @@ const Banner = () => {
           dots: true,
           autoplay: false,
           speed: 500,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   return (
     <section className="relative overflow-hidden banner">
       <Slider {...sliderSettings}>
-        {images.map((image: { node: { childImageSharp: { gatsbyImageData: any; }; base: string; }; }) => (
+        {images.map((image: { node: { childImageSharp: { gatsbyImageData: IGatsbyImageData; }; base: string; }; }) => (
           <GatsbyImage
             key={image.node.base}
             image={image.node.childImageSharp.gatsbyImageData}
-            alt={image.node.base.split(".")[0]}
+            alt={image.node.base.split('.')[0]}
             className="aspect-[3/2] md:aspect-[2/1] lg:h-[75vh] object-cover"
           />
         ))}
       </Slider>
-      <div className={"prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-[5vw] lg:p-8 bg-white transition-all ease-out duration-1000 lg:mt-24" + (entered ? " translate-y-0" : " lg:translate-y-[150%]")}>
+      <div className={'prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-[5vw] lg:p-8 bg-white transition-all ease-out duration-1000 lg:mt-24' + (entered ? ' translate-y-0' : ' lg:translate-y-[150%]')}>
         <h2>{headline}</h2>
         <p>{copy}</p>
         <a 
@@ -97,7 +97,7 @@ const Banner = () => {
         </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Banner;

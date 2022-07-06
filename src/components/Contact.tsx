@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 //data
 const address = 'Gospodarstwo Szkółkarskie Jolanta i Kazimierz Tomala \n Buchałowice 64 24 - 150 \n Nałęczów woj.Lubelskie',

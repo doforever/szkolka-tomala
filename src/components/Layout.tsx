@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import Header from './Header';
 
 type Props = {
@@ -8,11 +8,11 @@ type Props = {
 // markup
 const Layout = ({children}: Props) => {
   return (
-   <div>
-     <Header/>
+    <div>
+      <Header/>
       <main>{children}</main>
-   </div>
-  )
-}
+    </div>
+  );
+};
 
 export default Layout;

@@ -1,0 +1,28 @@
+{
+  "singleQuote": true,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "semi": true,
+  "useTabs": false,
+  "jsxSingleQuote": true,
+  "quoteProps": "as-needed",
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "requirePragma": false,
+  "insertPragma": false,
+  "htmlWhitespaceSensitivity": "strict",
+  "endOfLine": "auto",
+  "embeddedLanguageFormatting": "off",
+  "singleAttributePerLine": false,
+  "proseWrap": "never",
+  "overrides": [
+    {
+      "files": "*.scss",
+      "options": {
+        "tabWidth": 2,
+        "semi": true
+      }
+    }
+  ]
+}
+

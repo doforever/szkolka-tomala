@@ -1,16 +1,16 @@
-import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import React from 'react';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 //data
 
 // markup
 type SlideProps = {
-  image: {node: { childImageSharp: any; base: string}},
+  image: {node: { childImageSharp: { gatsbyImageData: IGatsbyImageData; }; base: string}},
 };
 
 const Slide = ({ image }: SlideProps): JSX.Element => {
   
-  const getTitle = (fileName: string) => fileName.split(".")[0].replaceAll('_', ' ');
+  const getTitle = (fileName: string) => fileName.split('.')[0].replaceAll('_', ' ');
 
   return (
     <div className="relative">
@@ -24,6 +24,6 @@ const Slide = ({ image }: SlideProps): JSX.Element => {
       </h3>
     </div>
   );
-}
+};
 
 export default Slide;
