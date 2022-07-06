@@ -4,7 +4,8 @@ import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Slider from 'react-slick';
 
 //data
-const headline = 'Rodzinna szkółka drzew ozdobnych w Buchałowicach na Lubelszczyźnie',
+const headline =
+    'Rodzinna szkółka drzew ozdobnych w Buchałowicach na Lubelszczyźnie',
   copy = 'Zapraszamy do zapoznania się z naszą ofertą',
   cta = 'Zobacz ofertę';
 
@@ -74,24 +75,36 @@ const Banner = () => {
   };
 
   return (
-    <section className="relative overflow-hidden banner">
+    <section className='relative overflow-hidden banner'>
       <Slider {...sliderSettings}>
-        {images.map((image: { node: { childImageSharp: { gatsbyImageData: IGatsbyImageData; }; base: string; }; }) => (
-          <GatsbyImage
-            key={image.node.base}
-            image={image.node.childImageSharp.gatsbyImageData}
-            alt={image.node.base.split('.')[0]}
-            className="aspect-[3/2] md:aspect-[2/1] lg:h-[75vh] object-cover"
-          />
-        ))}
+        {images.map(
+          (image: {
+            node: {
+              childImageSharp: { gatsbyImageData: IGatsbyImageData };
+              base: string;
+            };
+          }) => (
+            <GatsbyImage
+              key={image.node.base}
+              image={image.node.childImageSharp.gatsbyImageData}
+              alt={image.node.base.split('.')[0]}
+              className='aspect-[3/2] md:aspect-[2/1] lg:h-[75vh] object-cover'
+            />
+          )
+        )}
       </Slider>
-      <div className={'prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-[5vw] lg:p-8 bg-white transition-all ease-out duration-1000 lg:mt-24' + (entered ? ' translate-y-0' : ' lg:translate-y-[150%]')}>
+      <div
+        className={
+          'prose max-w-none lg:w-1/2 xl:w-1/3 lg:absolute lg:bottom-[5vw] lg:left-[5vw] p-[5vw] lg:p-8 bg-white transition-all ease-out duration-1000 lg:mt-24' +
+          (entered ? ' translate-y-0' : ' lg:translate-y-[150%]')
+        }
+      >
         <h2>{headline}</h2>
         <p>{copy}</p>
-        <a 
-          target="_blank" 
-          href="oferta-jesien-2016.pdf" 
-          className="bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block"
+        <a
+          target='_blank'
+          href='oferta-jesien-2016.pdf'
+          className='bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block'
         >
           {cta}
         </a>

@@ -6,10 +6,10 @@ type Props = {
 };
 
 // markup
-const Layout = ({children}: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <div>
-      <Header/>
+      <Header />
       <main>{children}</main>
     </div>
   );
