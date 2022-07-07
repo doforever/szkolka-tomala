@@ -36,7 +36,6 @@
       {"omitLastInOneLineBlock": true}
     ],
     "prettier/prettier": ["error", { 
-      "jsxSingleQuote": true, 
       "singleQuote": true, 
       "arrowParens": "avoid" 
       }

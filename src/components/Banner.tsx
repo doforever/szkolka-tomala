@@ -75,7 +75,7 @@ const Banner = () => {
   };
 
   return (
-    <section className='relative overflow-hidden banner'>
+    <section className="relative overflow-hidden banner">
       <Slider {...sliderSettings}>
         {images.map(
           (image: {
@@ -88,7 +88,7 @@ const Banner = () => {
               key={image.node.base}
               image={image.node.childImageSharp.gatsbyImageData}
               alt={image.node.base.split('.')[0]}
-              className='aspect-[3/2] md:aspect-[2/1] lg:h-[75vh] object-cover'
+              className="aspect-[3/2] md:aspect-[2/1] lg:h-[75vh] object-cover"
             />
           )
         )}
@@ -102,9 +102,9 @@ const Banner = () => {
         <h2>{headline}</h2>
         <p>{copy}</p>
         <a
-          target='_blank'
-          href='oferta-jesien-2016.pdf'
-          className='bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block'
+          target="_blank"
+          href="oferta-jesien-2016.pdf"
+          className="bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block"
         >
           {cta}
         </a>

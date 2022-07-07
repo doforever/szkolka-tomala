@@ -35,7 +35,7 @@ const Lightbox = ({ closeLightbox, initialSlide, children }: LightboxProps) => {
   }: {
     target: EventTarget;
   }) => {
-    if (target?.localName === 'div') {
+    if ((target as Element)?.localName === 'div') {
       closeLightbox();
     }
   };

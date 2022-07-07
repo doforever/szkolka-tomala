@@ -18,13 +18,13 @@ const Slide = ({ image }: SlideProps): JSX.Element => {
     fileName.split('.')[0].replaceAll('_', ' ');
 
   return (
-    <div className='relative'>
+    <div className="relative">
       <GatsbyImage
         image={image.node.childImageSharp.gatsbyImageData}
         alt={getTitle(image.node.base)}
-        className='w-[80vw]	md:w-auto overflow-hidden'
+        className="w-[80vw]	md:w-auto overflow-hidden"
       />
-      <h3 className='absolute bottom-0 capitalize text-center w-full p-2 bg-white/50 gallery__label'>
+      <h3 className="absolute bottom-0 capitalize text-center w-full p-2 bg-white/50 gallery__label">
         {getTitle(image.node.base)}
       </h3>
     </div>

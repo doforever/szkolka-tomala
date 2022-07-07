@@ -18,7 +18,6 @@ const IndexPage = () => (
       <Map />
     </Layout>
   </>
-
 );
 
 export default IndexPage;

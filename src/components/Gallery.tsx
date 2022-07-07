@@ -42,7 +42,7 @@ const Gallery = () => {
   // console.log('images', images);
 
   return (
-    <section className='gallery grid grid-flow-col overflow-x-auto md:grid-flow-row gap-4 px-[5vw] py-8 md:grid-cols-3 lg:grid-cols-4'>
+    <section className="gallery grid grid-flow-col overflow-x-auto md:grid-flow-row gap-4 px-[5vw] py-8 md:grid-cols-3 lg:grid-cols-4">
       {images.map(
         (
           image: {
@@ -64,7 +64,7 @@ const Gallery = () => {
                 setSelectedImage(i);
               }
             }}
-            className='pointer-events-none md:pointer-events-auto md:hover:scale-[1.02] md:focus:scale-[1.02] transition duration-500 ease-out relative'
+            className="pointer-events-none md:pointer-events-auto md:hover:scale-[1.02] md:focus:scale-[1.02] transition duration-500 ease-out relative"
           >
             <Slide image={image} />
           </a>
