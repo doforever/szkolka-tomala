@@ -42,7 +42,6 @@ const Lightbox = ({ closeLightbox, initialSlide, children }: LightboxProps) => {
 
   const sliderSettings = {
     dots: false,
-    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
