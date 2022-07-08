@@ -8,7 +8,7 @@ const address =
 
 // markup
 const Contact = () => (
-  <section className="flex flex-col md:flex-row gap-4 bg-green-800/5 lg:gap-8 p-[5vw] md:py-4 justify-between">
+  <section className="flex flex-col md:flex-row gap-4 bg-green-800/5 lg:gap-8 p-[5vw] md:py-6 justify-between">
     <div className="flex-1 max-w-md">
       <h3 className="text-xl font-semibold mb-1">Kontakt</h3>
       <address className="not-italic">

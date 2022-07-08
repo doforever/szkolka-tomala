@@ -1,38 +1,41 @@
-import type { GatsbyConfig } from "gatsby";
+import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
+  pathPrefix: '/szkolka-tomala',
   siteMetadata: {
-    title: `szkolka-tomala`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: 'Szkółka Tomala',
+    siteUrl: 'http://www.szkolkatomala.pl/',
   },
   plugins: [
-    "gatsby-plugin-sass", 
-    "gatsby-plugin-image", 
-    'gatsby-plugin-postcss', 
+    'gatsby-plugin-sass',
+    'gatsby-plugin-image',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/tomala_logo.png"
-      }
-    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
+        icon: 'src/images/icon.png',
+      },
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "images",
-        "path": "./src/images/"
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images"
+      __key: 'images',
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "data",
-        "path": "./src/data/"
+        name: 'data',
+        path: './src/data/',
       },
-      __key: "data"
+      __key: 'data',
     },
-    "gatsby-transformer-csv"
-  ]
+    'gatsby-transformer-csv',
+  ],
 };
 
 export default config;
