@@ -2,7 +2,7 @@ import React from 'react';
 
 //data
 const address =
-    'Gospodarstwo Szkółkarskie Jolanta i Kazimierz Tomala \n Buchałowice 64 24 - 150 \n Nałęczów woj.Lubelskie',
+    'Gospodarstwo Szkółkarskie Jolanta\u00A0i\u00A0Kazimierz\u00A0Tomala \n Buchałowice 64 \n 24 - 150 Nałęczów',
   email = 'tomala.kazik@gmail.com',
   hours = 'Pn-Pt: 7:00 - 17:00';
 
