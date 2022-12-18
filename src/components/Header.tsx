@@ -14,13 +14,6 @@ const Header = () => {
         <h1 className="text-2xl font-semibold">
           Gospodarstwo Szkółkarskie Jolanta i Kazimierz Tomala
         </h1>
-        <a
-          target="_blank"
-          href="oferta-jesien-2016.pdf"
-          className="hidden bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline lg:inline-block mr-0 ml-auto self-center"
-        >
-          ZOBACZ OFERTĘ
-        </a>
       </div>
     </header>
   );

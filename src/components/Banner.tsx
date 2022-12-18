@@ -101,13 +101,6 @@ const Banner = () => {
       >
         <h2>{headline}</h2>
         <p>{copy}</p>
-        <a
-          target="_blank"
-          href="oferta-jesien-2016.pdf"
-          className="bg-green-800 hover:bg-green-700 transition-all rounded text-white p-2 px-4 font-semibold uppercase no-underline inline-block"
-        >
-          {cta}
-        </a>
       </div>
     </section>
   );
