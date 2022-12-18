@@ -59,7 +59,7 @@
 
 .offer {
   &__columns {
-    grid-template-columns: repeat(auto-fit, min(400px, 100%));
+    grid-template-columns: repeat(auto-fit, min(500px, 100%));
 
     li:nth-child(-n+20) {
       display: block;
