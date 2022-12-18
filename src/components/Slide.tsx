@@ -24,7 +24,7 @@ const Slide = ({ image }: SlideProps): JSX.Element => {
         alt={getTitle(image.node.base)}
         className="w-[80vw]	md:w-auto overflow-hidden"
       />
-      <h3 className="absolute bottom-0 capitalize text-center w-full p-2 bg-white/50 gallery__label">
+      <h3 className="absolute bottom-0 text-center w-full p-2 bg-white/50 gallery__label">
         {getTitle(image.node.base)}
       </h3>
     </div>
