@@ -1,7 +1,7 @@
 import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
-  pathPrefix: '/szkolka-tomala',
+  pathPrefix: '',
   siteMetadata: {
     title: 'Szkółka Tomala',
     siteUrl: 'http://www.szkolkatomala.pl/',
