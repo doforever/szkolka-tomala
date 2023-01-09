@@ -46,7 +46,7 @@ const Banner = () => {
   }, []);
 
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 1000,
     autoplaySpeed: 8000,
@@ -58,7 +58,6 @@ const Banner = () => {
       {
         breakpoint: 1023,
         settings: {
-          dots: true,
           autoplay: false,
           speed: 800,
         },
@@ -66,7 +65,6 @@ const Banner = () => {
       {
         breakpoint: 639,
         settings: {
-          dots: true,
           autoplay: false,
           speed: 500,
         },
